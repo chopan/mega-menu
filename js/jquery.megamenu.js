@@ -15,16 +15,16 @@
 	
 	    // Valores para configuracion Predeterminada
 	    var opts = jQuery.extend({},jQuery.fn.megaMenu.defaults, options);
-	    jQuery.fn.megaMenu.defaults = {
-            mHeight: "400px",
-            mHeaderHeight: "35px",
-        };
+		jQuery.fn.megaMenu.defaults = {
+			mHeight: "400px",
+			mHeaderHeight: "35px",
+		};
 		
 		//Funcion que hace una pausa para que el lanzador tenga un retrazo
 		$.fn.pause = function(duration) {
-            $(this).stop().animate({ dummy: 1 }, duration);
-            return this;
-        };
+	            $(this).stop().animate({ dummy: 1 }, duration);
+	            return this;
+	        };
 		//Estilos para la altura de los titulos visibles
 		$("#mMenu").css({'height': opts.mHeaderHeight, 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
 		$("#mWrapper").css({'height': opts.mHeaderHeight});
